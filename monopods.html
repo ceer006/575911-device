@@ -7,10 +7,10 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Девайс">
-        </a>>
-        <!--Тут будет форма "Поиск по сайту"-->
+        </a>
+        <input type="search" name="search" placeholder="Поиск по сайту">
         <ul class="user-navigation">
           <li><a href="profile.html">Имя пользователя</a></li>  
           <li class="login-link">Выход</li>
@@ -45,10 +45,42 @@
         <li class="breadcrumbs-current">Моноподы для селфи</a></li>
       </ul>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <h2>Фильтр:</h2>
+        <form class="filters-form">
+          <hr>
+          <!--<label for="price">Стоимость</label>
+            <div>
+            </div>  -->
+          <hr>
+          <h3>Цвет</h3><br>
+          <label class="filter-color">
+            <input type="checkbox" checked>Черный<br>
+          </label>
+          <label>  
+            <input type="checkbox">Белый<br>
+          </label>
+          <label>
+            <input type="checkbox" checked>Синий<br>
+          </label>
+          <label>
+            <input type="checkbox" checked>Красный<br>
+          </label>
+          <label>
+            <input type="checkbox">Розовый<br>
+          </label>
+          <hr>
+          <h3>Bluetooth</h3>
+          <label>
+            <input type="radio" name="radio" checked>Есть
+          </label>
+          <label>
+            <input type="radio" name="radio">Нет
+          </label>
+          <input type="submit" value="показать">
+        </form>  
       </section>
       <section class="sorting">
+        <h2>Сортировка:</h2>
         <ul class="sorting-item"> <!--Выяснить как все-таки правильно-->
           <li><a href="sorting.html">По цене</a></li>
           <li><a href="sorting.html">По типу</a></li>
@@ -123,13 +155,13 @@
     </main>
 
     <footer class="main-footer">
-      <a class="main-footer-logo">
-        <img src="img/logo_color.png" width="163" height="36" alt="Логотип магазина Девайс">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Девайс">
       </a>
       <ul class="user-navigation">
         <li><a href="profile.html">Имя пользователя</a></li>  
         <li class="login-link">Выход</li>
-      </ul>>
+      </ul>
       <ul class="buy-navigation">
         <li><a href="compare.html">Сравнить</a></li>
         <li><a href="basket.html">Корзина</a></li>
