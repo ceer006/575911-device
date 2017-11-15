@@ -10,9 +10,11 @@
         <a class="main-header-logo">
           <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Девайс">
         </a>
-        <input type="search" name="search" placeholder="Поиск по сайту">
+        <form>
+          <input type="search" name="search" placeholder="Поиск по сайту">
+        </form>
         <ul class="user-navigation">
-            <li><a href="login.html">Вход</a></li>
+          <li><a href="login.html">Вход</a></li>
         </ul>
         <ul class="buy-navigation">
           <li><a href="compare.html">Сравнить</a></li>
@@ -184,8 +186,8 @@
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="name">Ваше имя:</label>
           <input type="text" id="name" value="" placeholder="Представьтесь, пожалуйста" required>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" value="" placeholder="для отправки ответа" required>
+          <label for="contact-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="contact-email" value="" placeholder="для отправки ответа" required>
           <label for="letter">Текст письма:</label>
           <textarea name="letter" id="letter" rows="7" placeholder="В свободной форме" required></textarea>
           <input type="submit">
@@ -196,30 +198,37 @@
     </main>
       
     <footer class="main-footer">
-      <a class="main-footer-logo">
-        <img src="img/logo_color.png" width="163" height="36" alt="Логотип магазина Девайс">
-      </a>
-      <ul class="user-navigation">
-        <li class="login-link">Вход</li>
-      </ul>
-      <ul class="buy-navigation">
-        <li><a href="compare.html">Сравнить</a></li>
-        <li><a href="basket.html">Корзина</a></li>
-      </ul>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <ul class="site-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <p>Тел.: +7 (495) 495-95-95</p>
-      <div class="footer-social">
+      <section class="footer-user">
+        <h2 class="visualy-hidden">Для пользователя</h2>
+        <a class="main-footer-logo">
+          <img src="img/logo_color.png" width="163" height="36" alt="Логотип магазина Девайс">
+        </a>
+        <ul class="user-navigation">
+          <li class="login-link">Вход</li>
+        </ul>
+        <ul class="buy-navigation">
+          <li><a href="compare.html">Сравнить</a></li>
+          <li><a href="basket.html">Корзина</a></li>
+        </ul>
+      </section>
+      <section class="footer-conditions">
+        <h2 class="visualy-hidden">Условия покупки</h2>
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="site-navigation">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </section>
+      <section class="footer-social">
+        <h2 class="visualy-hidden">Мы в соцсетях</h2>  
         <ul>
           <li><a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a></li>
           <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
           <li><a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a></li>
         </ul>
-      </div>
+      </section>
       <div>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </div>

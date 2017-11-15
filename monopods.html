@@ -47,45 +47,53 @@
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filters-form">
-          <hr>
-          <!--<label for="price">Стоимость</label>
+          <fieldset>
+            <hr>
+            <!--<label for="price">Стоимость</label>
             <div>
             </div>  -->
-          <hr>
-          <h3>Цвет</h3><br>
-          <label class="filter-color">
-            <input type="checkbox" checked>Черный<br>
-          </label>
-          <label>  
-            <input type="checkbox">Белый<br>
-          </label>
-          <label>
-            <input type="checkbox" checked>Синий<br>
-          </label>
-          <label>
-            <input type="checkbox" checked>Красный<br>
-          </label>
-          <label>
-            <input type="checkbox">Розовый<br>
-          </label>
-          <hr>
-          <h3>Bluetooth</h3>
-          <label>
-            <input type="radio" name="radio" checked>Есть
-          </label>
-          <label>
-            <input type="radio" name="radio">Нет
-          </label>
-          <input type="submit" value="показать">
+          </fieldset>
+          <fieldset>
+            <hr>
+            <h3>Цвет</h3><br>
+            <label class="filter-color">
+              <input type="checkbox" checked>Черный<br>
+            </label>
+            <label>  
+              <input type="checkbox">Белый<br>
+            </label>
+            <label>
+              <input type="checkbox" checked>Синий<br>
+            </label>
+            <label>
+              <input type="checkbox" checked>Красный<br>
+            </label>
+            <label>
+              <input type="checkbox">Розовый<br>
+            </label>
+          </fieldset>
+          <fieldset>
+            <hr>
+            <h3>Bluetooth</h3>
+            <label>
+              <input type="radio" name="radio" checked>Есть
+            </label>
+            <label>
+              <input type="radio" name="radio">Нет
+            </label>
+            <input type="submit" value="показать">
+          </fieldset>
         </form>  
       </section>
       <section class="sorting">
         <h2>Сортировка:</h2>
-        <ul class="sorting-item"> <!--Выяснить как все-таки правильно-->
+        <ul class="sorting-item">
           <li><a href="sorting.html">По цене</a></li>
           <li><a href="sorting.html">По типу</a></li>
           <li><a href="sorting.html">По популярности</a></li>
         </ul>
+        <button class="button-sorting">up</button>
+        <button class="button-sorting">down</button>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список палок для селфи</h2>
@@ -150,7 +158,10 @@
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Вперед</a></li>
         </ul>
-        <!-- Здесь будет форма В корзину -->  
+        <div class="basket">
+          <button class="basket-button">В корзину</button>
+          <button class="compare-button">Добавить к сравнению</button>
+        </div>  
       </section>        
     </main>
 
