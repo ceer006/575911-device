@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url('Gilroy-ExtraBold.eot');
+    src: url('Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-ExtraBold.woff') format('woff'),
+    url('Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    color: #000000;
+  
+    background-color: #f7e296;
+}
+  
+.site-navigation,
+.user-navigation,
+.site-navigation-catalog,
+.buy-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.site-navigation-catalog a,
+.buy-navigation a {
+    color: #000000;
+}
+
+.site-navigation {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.buy-navigation,
+.user-navigation,
+.site-navigation-catalog {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.container a {
+    color: #000000;
+}
+
+.features-device p:first-of-type {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    font-weight: 700;
+}
+
+.features-device p:nth-of-type(2) {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: auto;
+    font-weight: 700;
+}
+
+.features-device a {
+    font-size: 18px;
+
+    background-color: #f0c52e;
+}
+
+.data-description {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.data-property {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 36px;
+    line-height: auto;
+    font-weight: 300;    
+}
+
+.main-catalog img {
+    background-color: #f7e296;
+}
+
+.main-catalog img:hover {
+    background-color: #f0c52e;
+}
+
+.main-catalog a:focus {
+    background-color: #f0c52e;
+    opacity: 0.3;
+}
+
+.service {
+    background-color: #e5e5e5;
+}
+
+.service-choise {
+    text-transform: uppercase;   
+}
+
+.service-choise a,
+.info a,
+.button-write,
+.contact-fotm-submit {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f0c52e;
+}
+
+.service-choise a:focus {
+    color: #f7e184;
+
+    background-color: #000000;
+}
+
+.service h2,
+.info h2,
+.contact h2 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: auto;
+    font-weight: 700;  
+}
+
+.main-catalog,
+.service-choise {
+    list-style: none;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 700;  
+}
+
+.logistics {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700; 
+}
+
+.contact-form{
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.site-navigation-footer,
+.user-navigation-footer,
+.site-navigation-footer,
+.buy-navigation-footer,
+.footer-social-item,
+.breadcrumbs,
+.catalog-item,
+.pagination-item {
+    list-style: none;
+}
+
+.site-navigation-footer a,
+.user-navigation-footer a,
+.site-navigation-footer a,
+.buy-navigation-footer a,
+.footer-social-item a {
+    color: #ffffff;
+}
+
+.user-navigation-footer img,
+.buy-navigation-footer img {
+    color: #ffc600;
+}
+
+.site-navigation-footer {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.buy-navigation-footer,
+.user-navigation-footer {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.footer-conditions,
+.footer-social {
+    color: #ffffff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.filters,
+.sorting,
+.pagination-list,
+.basket {
+    background-color: #f2f2f2;
+}
+
+.page-title {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: auto;
+    font-weight: 700; 
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.filters h2,
+.sorting h2,
+.pagination-list {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.filters h3,
+.catalog-category,
+.filters-form input[type="submit"],
+.basket-button {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 700;
+}
+
+.filters-form input[type="submit"],
+.basket-button {
+    background-color: #f0c52e;
+}
+
+.sorting-item li {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    list-style: none;
+}
+
+.filters-form input[type="checkbox"],
+.filters-form input[type="radio"] {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.catalog-item-price {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 300;
+}
+
+.basket-button {
+    text-transform: uppercase;
+}
+
+.compare-button {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: 300;
+} 
+
+.button:hover,
+.main-header-logo:hover,
+.user-navigation li:hover,
+.buy-navigation a:hover,
+.site-navigation a:hover,
+.site-navigation:hover li:first-child,
+.pagination-item a:hover,
+.site-navigation-footer a:hover,
+.user-navigation-footer a:hover,
+.buy-navigation-footer a:hover,
+.main-footer-logo:hover {
+    opacity: 0.6;
+}
+
+.button:focus,
+.main-header-logo:focus,
+.user-navigation li:focus,
+.buy-navigation a:focus,
+.site-navigation a:focus,
+.site-navigation li:first-child:focus,
+.pagination-item a:focus,
+.site-navigation-footer a:focus,
+.user-navigation-footer a:focus,
+.buy-navigation-footer a:focus,
+.main-footer-logo:focus {
+    opacity: 0.3;
+}
+
+.footer-social-item a {
+    opacity: 0.3;
+}
+
+.footer-social-item a:hover {
+    opacity: 1;
+}
+
+.footer-social-item a:focus {
+    opacity: 0.1;
+}
+ /* по поводу логотипов так и не додумал, как сделать*/
