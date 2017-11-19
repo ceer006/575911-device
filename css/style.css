@@ -156,6 +156,53 @@ a {
     font-weight: 700;  
 }
 
+.logos {
+    margin-top: 94px;
+    margin-bottom: 82px;
+    font-size: 0;
+}
+  
+.logos a {
+    width: 260px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+.logos a:nth-of-type(1) {
+    padding-left: 0;
+}
+  
+.logos a:nth-of-type(4) {
+    padding-right: 0;
+}
+  
+.logos img {
+    opacity: 0.2;
+}
+  
+.logos img:hover {
+    opacity: 1;
+    height: 100px;
+    width: 0;
+    padding-left: 260px;
+}
+  
+.dji img:hover {
+    background-image: url("../img/logo-1.jpg");
+}
+  
+.sp-gadgets img:hover {
+    background-image: url("../img/logo-2.jpg");
+}
+  
+.gopro img:hover {
+    background-image: url("../img/logo-3.jpg");
+}
+  
+.vive img:hover {
+    background-image: url("../img/logo-4.jpg");
+}
+
 .logistics {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
@@ -284,6 +331,33 @@ a {
     font-weight: 300;
 }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    text-transform: none;
+
+    opacity: 0.5;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+    opacity: 0.8;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    background-color: #ffffff;
+    border: 2px solid #f0c52e;
+
+    opacity: 1;
+}
+
 .catalog-item-price {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
@@ -341,4 +415,7 @@ a {
 .footer-social-item a:focus {
     opacity: 0.1;
 }
- /* по поводу логотипов так и не додумал, как сделать*/
+ 
+.footer-link:hover path {
+    fill: #ffc600;
+}
