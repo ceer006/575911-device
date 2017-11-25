@@ -13,32 +13,36 @@
         <a class="main-header-logo">
           <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Девайс">
         </a>
-        <img src="img/search.svg" width="12" height="12" alt="Поиск">
-        <form>
-          <input type="search" name="search" placeholder="Поиск по сайту">
-        </form>
-        <ul class="user-navigation">
-          <li>
-            <a href="login.html">
-              <img src="img/user.svg" width="12" height="12" alt="Войти">
-              Войти
-            </a>
-          </li>
-        </ul>
-        <ul class="buy-navigation">
-          <li>
-            <a href="compare.html">
-              <img src="img/compare.svg" width="12" height="12" alt="Сравнить">
-              Сравнить
-            </a>
-          </li>
-          <li>
-            <a href="basket.html">
-              <img src="img/cart.svg" width="12" height="12" alt="Корзина">
-               Корзина
-            </a>
-          </li>
-        </ul>
+        <div class="user-navigation-wrapper">
+          <div class="search">  
+            <img src="img/search.svg" width="12" height="12" alt="Поиск">
+            <form>
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+          <ul class="user-navigation">
+            <li>
+              <a href="login.html">
+                <img src="img/user.svg" width="12" height="12" alt="Войти">
+                Войти
+              </a>
+            </li>
+          </ul>              
+          <ul class="buy-navigation">
+            <li>
+              <a href="compare.html">
+                <img src="img/compare.svg" width="12" height="12" alt="Сравнить">
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="basket.html">
+                <img src="img/cart.svg" width="12" height="12" alt="Корзина">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="site-navigation">
           <li>Каталог товаров
             <ul class="site-navigation-catalog">
@@ -54,6 +58,7 @@
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        
       </nav>
     </header>
 
@@ -118,44 +123,56 @@
           </table>
         </div>    
       </section>
-      <section>
+      <section class="main-catalog-wrapper">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="main-catalog">
           <li>
-            <a href="virtual-reality.html">
-              <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">  
-              Виртуальная реальность
-            </a>
+            <div class="main-catalog-container">
+              <a href="virtual-reality.html">
+                <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">  
+                Виртуальная реальность
+              </a>
+            </div>
           </li>
           <li>
-            <a href="monopods.html">
-              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-              Моноподы для селфи
-            </a>
+            <div class="main-catalog-container">
+              <a href="monopods.html">
+                <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+                Моноподы для селфи
+              </a>
+            </div>
           </li>
           <li>
-            <a href="action-camera.html">
-              <img src="img/popular-3.svg" width="71" height="87" alt="Экшен-камеры">
-              Экшен-камеры
-            </a>
+            <div class="main-catalog-container">
+              <a href="action-camera.html">
+                <img src="img/popular-3.svg" width="71" height="87" alt="Экшен-камеры">
+                Экшен-камеры
+              </a>
+            </div>
           </li>
           <li>
-            <a href="fitness-bracelet.html">
-              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-              Фитнес-браслеты
-            </a>
+            <div class="main-catalog-container">
+              <a href="fitness-bracelet.html">
+                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                Фитнес-браслеты
+              </a>
+            </div>
           </li>
           <li>
-            <a href="smart-watch.html">
-              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-              Умные часы
-            </a>
+            <div class="main-catalog-container">
+              <a href="smart-watch.html">
+                <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                Умные часы
+              </a>
+            </div>
           </li>
           <li>
-            <a href="quadrupter.html">
-              <img src="img/popular-6.svg" width="132" height="69" alt="Квадракоптеры">
-              Квадракоптеры
-            </a>
+            <div class="main-catalog-container">
+              <a href="quadrupter.html">
+                <img src="img/popular-6.svg" width="132" height="69" alt="Квадракоптеры">
+                Квадракоптеры
+              </a>
+            </div>
           </li>
         </ul>    
       </section>
@@ -199,101 +216,112 @@
           <img src="img/logo-4-grey.jpg" height="100" width="260" alt="">
         </a>
       </div>
-      <section class="info">
-        <h2>О Нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="logistics">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button info-button" href="contacts.html">Подробнее о нас</a>
-      </section>
-      <section class="contact">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <button type="button" class="button-write">Напишите нам</button>
-        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" value="" placeholder="Представьтесь, пожалуйста" required>
-          <label for="contact-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="contact-email" value="" placeholder="Для отправки ответа" required>
-          <label for="letter">Текст письма:</label>
-          <textarea name="letter" id="letter" rows="7" placeholder="В свободной форме" required></textarea>
-          <input type="submit" class="contact-fotm-submit">
-          <button type="button" class="letter-form-btn-close" aria-label="Закрыть">Закрыть</button>         
-        </form>  
-        <img src="img/map-big.png" width="960" height="559" alt="Карта">
-      </section>
+      <div class="index-columns">
+        <section class="info">
+          <h2>О Нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="logistics">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button info-button" href="contacts.html">Подробнее о нас</a>
+        </section>
+        <section class="contact">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <button type="button" class="button-write">Напишите нам</button>
+          <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" value="" placeholder="Представьтесь, пожалуйста" required>
+            <label for="contact-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="contact-email" value="" placeholder="Для отправки ответа" required>
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" id="letter" rows="7" placeholder="В свободной форме" required></textarea>
+            <input type="submit" class="contact-fotm-submit">
+            <button type="button" class="letter-form-btn-close" aria-label="Закрыть">Закрыть</button>         
+          </form>  
+          <img src="img/map-big.png" width="960" height="559" alt="Карта">
+        </section>
+      </div>
     </main>
       
     <footer class="main-footer">
-      <section class="footer-user">
-        <h2 class="visualy-hidden">Для пользователя</h2>
-        <a class="main-footer-logo">
-          <img src="img/logo_color.png" width="163" height="36" alt="Логотип магазина Девайс">
-        </a>
-        <ul class="user-navigation-footer">
-          <li>
-            <a href="login.html">
-                <img src="img/user.svg" width="12" height="12" alt="Войти">
-              Войти
-            </a>
-          </li>
-        </ul>
-        <ul class="buy-navigation-footer">
-          <li>
-            <a href="compare.html">
-              <img src="img/compare.svg" width="12" height="12" alt="Сравнить">
-              Сравнить
-            </a>
-          </li>
-          <li>
-            <a href="basket.html">
-                <img src="img/cart.svg" width="12" height="12" alt="Корзина">
-                Корзина
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-conditions">
-        <h2 class="visualy-hidden">Условия покупки</h2>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="site-navigation-footer">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-      </section>
-      <section class="footer-social">
-        <h2 class="visualy-hidden">Мы в соцсетях</h2>  
-        <ul class="footer-social-item">
-          <li>
-            <a class="social-button" href="#" aria-label="Фейсбук">
-              <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
-              Фейсбук
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Инстаграм">
-              <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
-              Инстаграм
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Твиттер">
-              <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
-              Твиттер
-            </a>
-          </li>
-        </ul>
-      </section>
-      <div>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="26.943" height="34.09" alt="HTML Academy">
-        </a>
+      <div class="footer-container">
+        <section class="footer-user">
+          <h2 class="visually-hidden">Для пользователя</h2>
+          <a class="main-footer-logo">
+            <img src="img/logo_color.png" width="163" height="36" alt="Логотип магазина Девайс">
+          </a>
+          <ul class="user-navigation-footer">
+            <li>
+              <a href="login.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+                    <path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+                  </svg>
+                Войти
+              </a>
+            </li>
+          </ul>
+          <ul class="buy-navigation-footer">
+            <li>
+              <a href="compare.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                    <path fill="#ffc600" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+                  </svg>
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="basket.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                    <path fill="#ffc600" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+                    <path fill="#ffc600" d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+                  </svg>
+                  Корзина
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-conditions">
+          <h2 class="visually-hidden">Условия покупки</h2>
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="site-navigation-footer">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>  
+          <ul class="footer-social-item">
+            <li>
+              <a class="social-button" href="#" aria-label="Фейсбук">
+                <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+                Фейсбук
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Инстаграм">
+                <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+                Инстаграм
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Твиттер">
+                <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+                Твиттер
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div>
+          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="26.943" height="34.09" alt="HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
