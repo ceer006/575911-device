@@ -42,7 +42,8 @@
           </ul>
         </div>
         <ul class="site-navigation">
-          <li>Каталог товаров
+          <li>
+            <p class="catalog-wrapper">Каталог товаров</p>
             <ul class="site-navigation-catalog">
               <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
               <li><a href="monopods.html">Моноподы для селфи</a></li>
@@ -75,7 +76,7 @@
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <div class="catalog-columns">
-        <div class="">
+        <div class="filter-wrapper">
           <section class="sorting">
             <h2>Сортировка:</h2>
             <ul class="sorting-item">
@@ -83,8 +84,10 @@
               <li><a href="sorting.html">По типу</a></li>
               <li><a href="sorting.html">По популярности</a></li>
             </ul>
-            <button class="button-sorting-up">up</button>
-            <button class="button-sorting-down">down</button>
+            <div class="sort-option-rates">
+              <a class="sort-option-rate active" aria-label="По возрастанию" href="#">&#9650;</a>
+              <a class="sort-option-rate" aria-label="По убыванию" href="#">&#9660;</a>
+            </div>
           </section>
           <section class="filters">
             <h2>Фильтр:</h2>
@@ -94,7 +97,7 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="margin-left: 0; width: 60%"></div>
+                      <div class="bar"></div>
                     </div>
                     <div class="toggle toggle-min"></div>
                     <div class="toggle toggle-max"></div>
@@ -106,7 +109,7 @@
                 </div>
               </fieldset>
               <fieldset class="filter-item">
-                <legend>Цвет</legend>
+                <legend class="filter-legend">Цвет</legend>
                 <label class="filter-color">
                   <input type="checkbox" checked>Черный<br>
                 </label>
@@ -124,14 +127,14 @@
                 </label>
               </fieldset>
               <fieldset class="filter-item">
-                <legend>Bluetooth</legend>
+                <legend class="filter-legend">Bluetooth</legend>
                 <label>
                   <input type="radio" name="radio" checked>Есть
                 </label>
                 <label>
                   <input type="radio" name="radio">Нет
                 </label>
-                <input type="submit" value="показать">
+                <input class="device-btn" type="submit" value="показать">
               </fieldset>
             </form>  
           </section>
@@ -141,7 +144,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="basket">
-                <button class="basket-button">В корзину</button>
+                <a class="device-btn" href="#">В корзину</a>
                 <button class="compare-button">Добавить к сравнению</button>
               </div>
               <p class="catalog-item-image">
@@ -158,7 +161,7 @@
             </li>
             <li class="catalog-item">
               <div class="basket">
-                <button class="basket-button">В корзину</button>
+                <a class="device-btn" href="#">В корзину</a>
                 <button class="compare-button">Добавить к сравнению</button>
               </div>
               <p class="catalog-item-image">
@@ -175,7 +178,7 @@
             </li>
             <li class="catalog-item">
               <div class="basket">
-                <button class="basket-button">В корзину</button>
+                <a class="device-btn" href="#">В корзину</a>
                 <button class="compare-button">Добавить к сравнению</button>
               </div>
               <p class="catalog-item-image">
@@ -192,7 +195,7 @@
             </li>
             <li class="catalog-item">
               <div class="basket">
-                <button class="basket-button">В корзину</button>
+                <a class="device-btn" href="#">В корзину</a>
                 <button class="compare-button">Добавить к сравнению</button>
               </div>
               <p class="catalog-item-image">
