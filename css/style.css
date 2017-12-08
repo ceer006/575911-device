@@ -1526,6 +1526,7 @@ input[type="radio"].visually-hidden {
     width: 260px;
     margin: 0;
     padding: 0;
+    margin-top: auto;
 }
 
 .contact-form{
@@ -2455,8 +2456,8 @@ input[type="checkbox"]:hover {
 .modal-letter {
     display: none;
     
-    width: 760px;
-    height: 365px;
+    width: 960px;
+    height: 555px;
     margin: 0;
     top: 50%;
     left: 50%;
@@ -2478,7 +2479,7 @@ input[type="checkbox"]:hover {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
-    width: 340px;
+    width: 360px;
     line-height: 50px;
     margin-top: 10px;
     margin-bottom: 40px;
@@ -2525,8 +2526,8 @@ input[type="checkbox"]:hover {
     content: "";
     position: absolute;
     width: 31px;
-    top: 50%;
-    left: 25%;
+    top: 48%;
+    left: 24%;
     height: 3px;
     background-color: #d0d0d0;
 }
@@ -2590,4 +2591,74 @@ input[type="checkbox"]:hover {
 .device-btn:hover::before {
     top: 0;
     height: 100%;
+}
+
+.modal-show {
+    display: block;
+    
+    animation: bounce 0.6s;
+}
+  
+.modal-error {
+    animation: shake 0.6s;
+}
+  
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+}
+
+.modal-map div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  
+    margin: 0;
+}
+
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+  
+    border: none;
+}
+
+.modal-map .modal-close {
+    z-index: 3;
 }

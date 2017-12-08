@@ -363,8 +363,8 @@
         <section class="contact">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.png" width="560" height="222" alt="Карта">   
-          <a class="device-btn" href="contacts.html">Напишите нам</a>     
+          <img class="contacts-map" src="img/map.png" width="560" height="222" alt="Карта">   
+          <a class="letter-btn device-btn" href="#">Напишите нам</a>     
         </section>
       </div>
     </main>
@@ -449,25 +449,29 @@
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
           <label for="name">Ваше имя:</label>
-          <input type="text" id="name" value="" placeholder="Представьтесь, пожалуйста" required>
+          <input type="text" id="name" name="initials" value="" placeholder="Представьтесь, пожалуйста" >
         </div>
         <div>
           <label for="contact-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="contact-email" value="" placeholder="Для отправки ответа" required>
+          <input type="email" name="email" id="contact-email" value="" placeholder="Для отправки ответа" >
         </div>
         <div>
           <label for="letter">Текст письма:</label>
-          <textarea name="letter" id="letter" rows="7" placeholder="В свободной форме" required></textarea>
+          <textarea name="letter" id="letter" rows="7" placeholder="В свободной форме" ></textarea>
         </div>
-        <input type="submit" class="contact-fotm-submit">
+        <input type="submit" class="btn">
       </form>  
     </section>
 
     <section class="modal modal-map">
-      <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBa0YVWEsC" width="960" height="559" frameborder="0"></iframe>
+      <div>
+        <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15" tabindex="0">
+      </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
-
+    
+    <script src="js/script.js"></script>
   </body>
 </html>
