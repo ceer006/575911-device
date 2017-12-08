@@ -9,6 +9,52 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
+        <div class="main-header-wrapper-index">
+          <a class="index-logo header-logo">
+            <img src="img/logo.png" width="164" height="36" alt="Логотип Device">
+          </a>
+          <div class="user-nav-wrapper">
+            <form class="search-form">
+              <label class="search-icon" for="search" aria-label="Поиск по сайту"></label>
+              <input class="search" id="search" type="search" name="site-search" placeholder="Поиск по сайту">
+              <button class="btn-search" type="submit">Найти</button>
+            </form>
+            <ul class="header-user-action">
+              <div class="user-block">
+                <li><a class="login-link" href="info.html">Войти</a></li>
+                <li><a class="login-exit disabled" href="#">Выйти</a></li>
+              </div>
+              <div class="product-block">
+                <li><a class="compare-goods" href="#">Сравнить</a></li>
+                <li><a class="user-cart" href="#">Корзина</a></li>
+              </div>
+            </ul>
+          </div>
+          <nav class="main-nav">
+            <div class="catalog-nav">
+              <a class="menu-item open-catalog" href="catalog.html">Каталог товаров</a>
+              <ul class="submenu-catalog">
+                <li><a href="virtual.html">Виртуальная реальность</a></li>
+                <li><a href="bracelets.html">Фитнесс-браслеты</a></li>
+                <li><a href="cameras.html">Квадрокоптеры</a></li>
+                <li><a href="monopods.html">Моноподы для селфи</a></li>
+                <li><a href="clocks.html">Умные часы</a></li>
+                <li><a href="cameras.html">Экшн-камеры</a></li>
+              </ul>
+            </div>
+            <ul class="services-nav">
+              <div class="services-block">
+                <li><a class="menu-item" href="#">Доставка</a></li>
+                <li><a class="menu-item" href="#">Гарантия</a></li>
+              </div>
+              <li><a class="menu-item contacts" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="main-header">
       <nav class="main-navigation-index">
         <a class="main-header-logo">
           <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Девайс">
@@ -16,10 +62,21 @@
         <div class="user-navigation-wrapper">
           <div class="search">  
             <form class="search-form">
-              <input type="search" name="search" placeholder="Поиск по сайту">
-              <button type="botton">Найти</button>
+              <label class="search-icon" for="search" aria-label="Поиск по сайту"></label>
+              <input class="search" id="search" type="search" name="site-search" placeholder="Поиск по сайту">
+              <button class="btn-search" type="submit">Найти</button>
             </form>
           </div>
+          <ul class="header-user-action">
+            <div class="user-block">
+              <li><a class="login-link" href="info.html">Войти</a></li>
+              <li><a class="login-exit disabled" href="#">Выйти</a></li>
+            </div>
+            <div class="product-block">
+              <li><a class="compare-goods" href="#">Сравнить</a></li>
+              <li><a class="user-cart" href="#">Корзина</a></li>
+            </div>
+        </ul>
           <ul class="user-navigation">
             <li>
               <a class="login-link" href="login.html">
@@ -42,7 +99,7 @@
         </div>
         <ul class="site-navigation">
           <li>
-            <p class="catalog-wrapper">Каталог товаров</p>
+            <p class="catalog-wrapper" tabindex="0">Каталог товаров</p>
             <ul class="site-navigation-catalog">
               <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
               <li><a href="monopods.html">Моноподы для селфи</a></li>
@@ -57,7 +114,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <main class="container">
       <h1 class="visually-hidden">Магазин "Device"</h1>
@@ -198,7 +255,45 @@
           </li>
         </ul>    
       </section>
-      <section class="service">
+      <section class="slider-services">
+        <div class="container">
+          <div class="slider-services-wrapper">
+            <h2 class="visually-hidden">Сервисы магазина</h2>
+            <input class="visually-hidden" type="radio" id="service-1" name="toggle-1" checked>
+            <input class="visually-hidden" type="radio" id="service-2" name="toggle-1">
+            <input class="visually-hidden" type="radio" id="service-3" name="toggle-1">
+            <div class="slider-services-controls">
+              <label class="btn btn-service" for="service-1" id="delivery">Доставка</label>
+              <label class="btn btn-service" for="service-2" id="warranty">Гарантия</label>
+              <label class="btn btn-service" for="service-3">Кредит</label>
+            </div>
+            <ul class="slider-services-list">
+              <li class="service-slide" id="service-slide-1">
+                <div class="service-slide-content">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+                <p class="service-icon delivery-icon"></p>
+              </li>
+              <li class="service-slide" id="service-slide-2">
+                <div class="service-slide-content">
+                  <h3>Гарантия</h3>
+                  <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                </div>
+                <p class="service-icon warranty-icon"></p>
+              </li>
+              <li class="service-slide" id="service-slide-3">
+                <div class="service-slide-content">
+                  <h3>Кредит</h3>
+                  <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+                <p class="service-icon credit-icon"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="service">
         <div class="service-slider-controls">
           <i class="active"></i>
           <i></i>
@@ -238,7 +333,7 @@
             </li>
           </ul>
         </div>                                          
-      </section>
+      </section> -->
       <div class="logos">
         <a href="http://www.dji.com/" target="_blank" class="dji">
           <img src="img/logo-1-grey.jpg" height="100" width="260" alt="">
