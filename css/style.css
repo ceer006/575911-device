@@ -249,7 +249,7 @@ input[type="radio"].visually-hidden {
 .header-user-action {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     
     width: 260px;
     
@@ -263,6 +263,7 @@ input[type="radio"].visually-hidden {
     
     margin: 0;
     padding: 0;
+    margin-right: 20px;
 }
 
 .header-user-action a {
