@@ -1798,16 +1798,37 @@ input[type="radio"].visually-hidden {
 .pagination-list {
     display: flex;
     margin: 0;
-    padding: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0;    
     margin-top: 40px;
     height: 70px;
+}
+
+.pagination-list .pagination-item-forth {
+    padding-right: 30px;
+}
+
+.pagination-list .pagination-item-back {
+    padding-left: 30px;
 }
 
 .pagination-item a {
     display: block;
     padding: 25px 10px;
+    opacity: 0.3;
+}
+
+.pagination-item-current a,
+.pagination-item-forth a, 
+.pagination-item-back a {
+    opacity: 1;
+}
+
+.pagination-item-forth:hover,
+.pagination-item-back:hover,
+.pagination-item-forth:focus,
+.pagination-item-back:focus {
+    background-color: rgba(0,0,0, 0.08);
+    z-index: 1;
 }
 
 .pagination-list .pagination-item:first-child {
