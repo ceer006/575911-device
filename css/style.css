@@ -660,7 +660,7 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
-.slider-item:nth-child(3) .slider-column2 p:nth-of-type(2) {
+.slider-item:nth-child(3) .slider-col2-tagline {
     margin: 0;
     padding: 0;
     width: 500px;
